@@ -1,16 +1,8 @@
 Main concerns:
 
-- Fix segfaults caused by opening files
-- Implement text-wrapping
-- Implement settings save and loading
 - Implement document state save and loading
-- Implement line numbers
-- Implement dark mode
-- Implement fonts
-- Write complete installing documentation
-- Create file dialog
-- Add a "Save without choosing path" option
-
+- Write complete installing documentation (for windows)
+- Add system installer
 
 Minor fixes/improvements:
 
