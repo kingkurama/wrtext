@@ -9,9 +9,9 @@
 #include "settings.h"
 #include "settings_save_system.h"
 #include <gtk/gtk.h>
+#include <gtksourceview/gtksource.h>
 #include <stdlib.h>
 #include <string.h>
-#include <gtksourceview/gtksource.h>
 
 /*!
 	@brief Structure defining a list of files and mapping each one to a page number
@@ -46,7 +46,6 @@ GtkWidget *vbox;
 static gboolean
 on_close_request(GtkWindow *window, gpointer user_data)
 {
-	int file_index = -1;
 	for(int i = 0; i < file_list.length; i++) {
 		if(file_list.files[i]->to_save) { // If there's a file with unsaved changes
 			gui_confirm_show(-1);		  // closes the window if accepted
@@ -414,6 +413,7 @@ gui_edit_add_file(editor_file *f)
 
 	// Create text area with file contents
 	GtkWidget *text_area = gtk_source_view_new();
+	gtk_text_view_set_buffer(GTK_TEXT_VIEW(text_area), f->buffer);
 
 	// Make text area fill the whole space
 	gtk_widget_set_hexpand(text_area, TRUE);
@@ -422,8 +422,9 @@ gui_edit_add_file(editor_file *f)
 	// Based on textwrap and linenums settings applies text wrap and line numbers
 	settings_state s = settings_get();
 	gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(text_area),
-							s.textwrap == 1 ? GTK_WRAP_CHAR : GTK_WRAP_NONE);
-	gtk_source_view_set_show_line_numbers(GTK_SOURCE_VIEW(text_area), s.linenums == 1 ? TRUE : FALSE);
+								s.textwrap == 1 ? GTK_WRAP_CHAR : GTK_WRAP_NONE);
+	gtk_source_view_set_show_line_numbers(GTK_SOURCE_VIEW(text_area),
+										  s.linenums == 1 ? TRUE : FALSE);
 	// Adds text area to scrollable window
 	gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scrolled_window), text_area);
 
