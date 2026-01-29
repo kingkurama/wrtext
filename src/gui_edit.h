@@ -14,7 +14,7 @@
 
 	@param app Pointer to the GTK application
 */
-GtkWidget *gui_edit_init(GtkApplication *app);
+GtkWidget *gui_edit_init(GtkApplication *app,int cmd_files_num, char **cmd_files_str);
 
 /*!
 	@brief Updates statusbar text with the data from the file passed as a parameter

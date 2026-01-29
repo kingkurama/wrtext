@@ -46,24 +46,30 @@ gui_edit_menu_on_open(GSimpleAction *action, GVariant *parameter, gpointer user_
 	// -> correction: before we couldn't type on open/new cerated files
 	gtk_widget_set_sensitive(GTK_WIDGET(parent), TRUE);
 
-	if(path) {
-		editor_file *ef = fmanager_load(path);
+	gui_edit_menu_open_file(path);
+}
+
+void
+gui_edit_menu_open_file(char *file_path)
+{
+	if(file_path) {
+		editor_file *ef = fmanager_load(file_path);
 		if(ef) {
 			// Checks whether it's a correct UTF-8 string
 			gboolean valid = g_utf8_validate(ef->contents, ef->size, NULL);
 
 			if(!valid) {
 				gui_alert_error("File \"%s\" is not a valid UTF-8 string.", ef->file_name);
-				log_err(__FILE__, "File is not UTF-8: %s", path);
+				log_err(__FILE__, "File is not UTF-8: %s", file_path);
 			} else {
 				gui_edit_add_file(ef);
 				log_info(__FILE__, "Open selected: %s", ef->file_name);
 			}
 		} else {
-			gui_alert_error("Failed to load file %s", path);
-			log_err(__FILE__, "Failed to load file: %s", path);
+			gui_alert_error("Failed to load file %s", file_path);
+			log_err(__FILE__, "Failed to load file: %s", file_path);
 		}
-		g_free(path);
+		g_free(file_path);
 	}
 }
 

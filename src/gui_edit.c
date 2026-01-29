@@ -191,7 +191,7 @@ log_file_list()
 }
 
 GtkWidget *
-gui_edit_init(GtkApplication *app)
+gui_edit_init(GtkApplication *app, int cmd_files_num, char **cmd_files_str)
 {
 
 	// Load settings
@@ -262,6 +262,13 @@ gui_edit_init(GtkApplication *app)
 	gtk_box_append(GTK_BOX(vbox), statusbar);
 
 	gtk_window_present(GTK_WINDOW(window));
+
+	// Opens all the files it received from command line
+	for(int i = 0; i < cmd_files_num; i++) {
+		gui_edit_menu_open_file(cmd_files_str[i]);
+		// free(cmd_files_str[i]);
+	}
+	// free(cmd_files_str);
 
 	return window;
 }
