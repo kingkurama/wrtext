@@ -198,6 +198,15 @@ gui_edit_init(GtkApplication *app, int cmd_files_num, char **cmd_files_str)
 	int t = settings_file_load();
 	if(t != 1) {
 		log_err(__FILE__, "Error loading settings file");
+		// Set default settings
+		settings_state s;
+		s.darkmode = 0;
+		s.linenums = 0;
+		s.textwrap = 1;
+		s.whitespace = 0;
+		s.font_family[0] = 0; // TODO; FIND SYSTEMFONT!!
+		s.font_size = 12;
+		settings_set(&s);
 	}
 	settings_apply(); // applies settings
 
