@@ -33,6 +33,9 @@ settings_apply()
 	// Apply line numbers
 	gui_edit_set_line_numbers(s.linenums);
 
+	// Apply whitespace
+	gui_edit_set_whitespace(s.whitespace);
+
 	// Apply dark mode preference
 	// GtkSettings *gtk_settings = gtk_settings_get_default();
 	// g_object_set(gtk_settings, "gtk-application-prefer-dark-theme", s.darkmode, NULL);

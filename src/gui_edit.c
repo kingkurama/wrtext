@@ -432,6 +432,17 @@ gui_edit_add_file(editor_file *f)
 								s.textwrap == 1 ? GTK_WRAP_CHAR : GTK_WRAP_NONE);
 	gtk_source_view_set_show_line_numbers(GTK_SOURCE_VIEW(text_area),
 										  s.linenums == 1 ? TRUE : FALSE);
+	// Based on whitespace settings applies whitespace rendering
+
+	GtkSourceSpaceDrawer *sdraw = gtk_source_view_get_space_drawer(GTK_SOURCE_VIEW(text_area));
+	if(s.whitespace) {
+		gtk_source_space_drawer_set_types_for_locations(sdraw, GTK_SOURCE_SPACE_LOCATION_ALL,
+														GTK_SOURCE_SPACE_TYPE_ALL);
+		gtk_source_space_drawer_set_enable_matrix(sdraw, TRUE);
+	} else {
+		gtk_source_space_drawer_set_types_for_locations(sdraw, GTK_SOURCE_SPACE_LOCATION_ALL, 0);
+	}
+
 	// Adds text area to scrollable window
 	gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scrolled_window), text_area);
 
@@ -545,6 +556,26 @@ gui_edit_set_wrap(int b)
 	for(int i = 0; i < file_list.length; i++) {
 		tarea = gtk_scrolled_window_get_child(GTK_SCROLLED_WINDOW(file_list.page_widget[i]));
 		gtk_text_view_set_wrap_mode(GTK_TEXT_VIEW(tarea), b == 1 ? GTK_WRAP_CHAR : GTK_WRAP_NONE);
+	}
+}
+
+void
+gui_edit_set_whitespace(int b)
+{
+	// log_info(__FILE__,"SETTING WHITESPACE TO %d",b);
+	//  Loops through every page and sets whitespace
+	GtkWidget *tarea;
+	for(int i = 0; i < file_list.length; i++) {
+		tarea = gtk_scrolled_window_get_child(GTK_SCROLLED_WINDOW(file_list.page_widget[i]));
+		GtkSourceSpaceDrawer *sdraw = gtk_source_view_get_space_drawer(GTK_SOURCE_VIEW(tarea));
+		if(b) {
+			gtk_source_space_drawer_set_types_for_locations(sdraw, GTK_SOURCE_SPACE_LOCATION_ALL,
+															GTK_SOURCE_SPACE_TYPE_ALL);
+			gtk_source_space_drawer_set_enable_matrix(sdraw, TRUE);
+		} else {
+			gtk_source_space_drawer_set_types_for_locations(sdraw, GTK_SOURCE_SPACE_LOCATION_ALL,
+															0);
+		}
 	}
 }
 

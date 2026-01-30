@@ -52,4 +52,6 @@ editor_file *gui_edit_get_selected_file();
 
 void gui_edit_set_wrap(int b);
 
+void gui_edit_set_whitespace(int b);
+
 void gui_edit_set_line_numbers(int b);
