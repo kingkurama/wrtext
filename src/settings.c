@@ -37,7 +37,6 @@ settings_apply()
 	// GtkSettings *gtk_settings = gtk_settings_get_default();
 	// g_object_set(gtk_settings, "gtk-application-prefer-dark-theme", s.darkmode, NULL);
 
-
 	// log_info(__FILE__, "Applying font family [%s] with sizee [%d]\n",
 	// s.font_family,s.font_size);
 
@@ -52,13 +51,15 @@ settings_apply()
 	char css[516];
 	if(s.darkmode) {
 		snprintf(css, sizeof(css),
-				 "textview { font-family: '%s'; font-size: %dpt; background-color: #1e1e1e; color: #d4d4d4; }" // background
-				 "textview text { background-color: #1e1e1e; color: #d4d4d4; }" // text 
-				 "window { background-color: #1e1e1e; color: #d4d4d4; }", // windows
+				 "textview { font-family: '%s'; font-size: %dpt; background-color: #1e1e1e; "
+				 "color: #d4d4d4; }"											// background
+				 "textview text { background-color: #1e1e1e; color: #d4d4d4; }" // text
+				 "window { background-color: #1e1e1e; color: #d4d4d4; }",		// windows
 				 s.font_family, s.font_size);
 	} else {
 		snprintf(css, sizeof(css),
-				 "textview { font-family: '%s'; font-size: %dpt; background-color: #ffffff; color: #000000; }"
+				 "textview { font-family: '%s'; font-size: %dpt; background-color: #ffffff; "
+				 "color: #000000; }"
 				 "textview text { background-color: #ffffff; color: #000000; }"
 				 "window { background-color: #ffffff; color: #000000; }",
 				 s.font_family, s.font_size);

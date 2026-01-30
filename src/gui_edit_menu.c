@@ -212,7 +212,7 @@ gui_edit_menu_init(GtkApplication *app)
 {
 
 	// Create action
-	GSimpleAction *action_randfile = g_simple_action_new("randfile", NULL);
+	// GSimpleAction *action_randfile = g_simple_action_new("randfile", NULL);
 	GSimpleAction *action_new = g_simple_action_new("new", NULL);
 	GSimpleAction *action_open = g_simple_action_new("open", NULL);
 	GSimpleAction *action_save_as = g_simple_action_new("save_as", NULL);
@@ -225,7 +225,7 @@ gui_edit_menu_init(GtkApplication *app)
 	g_save_as = action_save_as;
 
 	// Link action to function
-	g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_randfile));
+	// g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_randfile));
 	g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_new));
 	g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_open));
 	g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_save_as));
@@ -233,7 +233,7 @@ gui_edit_menu_init(GtkApplication *app)
 	g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_about));
 	g_action_map_add_action(G_ACTION_MAP(app), G_ACTION(action_settings));
 
-	g_signal_connect(action_randfile, "activate", G_CALLBACK(gui_edit_add_random_file), NULL);
+	// g_signal_connect(action_randfile, "activate", G_CALLBACK(gui_edit_add_random_file), NULL);
 	g_signal_connect(action_new, "activate", G_CALLBACK(gui_edit_menu_on_new), app);
 
 	// Open/save actions. Pass the GtkApplication as user_data so callbacks
@@ -258,8 +258,8 @@ gui_edit_menu_init(GtkApplication *app)
 	GMenuItem *menu_edit_menu = g_menu_item_new("Edit", NULL);
 
 	// Items
-	GMenuItem *item_filerand
-		= g_menu_item_new("FileRand", "app.randfile"); // Link option to action
+	// GMenuItem *item_filerand= g_menu_item_new("FileRand", "app.randfile"); // Link option to
+	// action
 	GMenuItem *item_new = g_menu_item_new("New...", "app.new");
 	GMenuItem *item_open = g_menu_item_new("Open...", "app.open");
 	GMenuItem *item_save_as = g_menu_item_new("Save As...", "app.save_as");
@@ -272,7 +272,7 @@ gui_edit_menu_init(GtkApplication *app)
 	g_menu_append_item(menu_file_model, item_open);
 	g_menu_append_item(menu_file_model, item_save_as);
 	g_menu_append_item(menu_file_model, item_save);
-	g_menu_append_item(menu_file_model, item_filerand);
+	// g_menu_append_item(menu_file_model, item_filerand);
 	g_menu_item_set_submenu(menu_file_menu, G_MENU_MODEL(menu_file_model));
 	g_menu_append_item(menu_model, menu_file_menu);
 
