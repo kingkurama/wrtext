@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['darkmode_0',['darkmode',['../structsettings__state.html#a85180afa9be8ecc3b3229cba7d31be7b',1,'settings_state']]]
+  ['buffer_0',['buffer',['../structeditor__file.html#a10ca29993c39a5f4e05246c88646f88f',1,'editor_file']]]
 ];

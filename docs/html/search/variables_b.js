@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vbox_0',['vbox',['../gui__edit_8c.html#a4135ce280f2ff654540c78e33ce96228',1,'gui_edit.c']]]
+  ['response_0',['response',['../structfd__cbdata.html#a48fe64a2616b79765d5e45994a28c719',1,'fd_cbdata']]],
+  ['result_1',['result',['../structfd__cbdata.html#afd9428850581118f79131b347b86d2e3',1,'fd_cbdata']]]
 ];

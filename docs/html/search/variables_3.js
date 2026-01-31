@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ids_0',['ids',['../structeditor__file__list.html#a2d8b38d12b29089a6ef27fe3e62ecc2b',1,'editor_file_list']]]
+  ['ef_0',['ef',['../structconfirm__params.html#a93ab3361df2287249d5394a1aa44fd96',1,'confirm_params']]],
+  ['encoding_1',['encoding',['../structDocument.html#a8aea3b06f761dcbb320a7bea44024e59',1,'Document']]]
 ];

@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['t_0',['t',['../settings_8c.html#acdfe61239958404d25456fea30b21e33',1,'settings.c']]],
-  ['textwrap_1',['textwrap',['../structsettings__state.html#a370d126af4402f30afee3e5e315eee33',1,'settings_state']]]
+  ['page_5fwidget_0',['page_widget',['../structeditor__file__list.html#a8c8ab60d16b3f954b44baed4bcce7799',1,'editor_file_list']]],
+  ['parent_1',['parent',['../gui__alert_8c.html#afd7deab3b9e8131e8f8d175b3f880eff',1,'gui_alert.c']]],
+  ['parent2_2',['parent2',['../gui__confirm_8c.html#af08d1e70258875abbd19709fc60c0082',1,'gui_confirm.c']]],
+  ['parent_5fwindow_3',['parent_window',['../gui__settings_8c.html#a4583c67a7e929ce8c51bd25c8818d50c',1,'gui_settings.c']]],
+  ['path_4',['path',['../structDocument.html#a3d54821677220216123ee1bef997a132',1,'Document']]],
+  ['path_5flength_5',['path_length',['../structDocumentHeader.html#aecf69eb3694c108adee01db39e0895fb',1,'DocumentHeader']]],
+  ['ptr_6',['ptr',['../structSettings__Entry.html#ad0d6da207fadc1e775c4cc18d0f41c7b',1,'Settings_Entry']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">WRText<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">WRText<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,10 +75,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="gui__edit_8h_source.html">gui_edit.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="editor__file_8h_source.html">editor_file.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gui__alert_8h_source.html">gui_alert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gui__confirm_8h_source.html">gui_confirm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gui__edit__menu_8h_source.html">gui_edit_menu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gui__settings_8h_source.html">gui_settings.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="logger_8h_source.html">logger.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="settings__save__system_8h_source.html">settings_save_system.h</a>&quot;</code><br />
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &lt;gtksourceview/gtksource.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -90,14 +95,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab532aaa1ddf72b96ff0e3a930d6c0148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#ab532aaa1ddf72b96ff0e3a930d6c0148">statusbar_update</a> (<a class="el" href="structeditor__file.html">editor_file</a> *f)</td></tr>
-<tr class="memdesc:ab532aaa1ddf72b96ff0e3a930d6c0148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates statusbar text with the data from the file passed as a parameter.  <a href="gui__edit_8c.html#ab532aaa1ddf72b96ff0e3a930d6c0148">More...</a><br /></td></tr>
-<tr class="separator:ab532aaa1ddf72b96ff0e3a930d6c0148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9f7637bc48efffda617973c9b40f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#aaf9f7637bc48efffda617973c9b40f0c">gui_edit_update_titles</a> ()</td></tr>
+<tr class="memdesc:aaf9f7637bc48efffda617973c9b40f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function interates through every open file and updates it's title on the notebook based on whether there are unsaved changes. (Shows the asterisk in case)  <a href="gui__edit_8c.html#aaf9f7637bc48efffda617973c9b40f0c">More...</a><br /></td></tr>
+<tr class="separator:aaf9f7637bc48efffda617973c9b40f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1e7668468b9fdaa7aa8c6d3afc76e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a4f1e7668468b9fdaa7aa8c6d3afc76e2">gui_edit_statusbar_update</a> (<a class="el" href="structeditor__file.html">editor_file</a> *f)</td></tr>
+<tr class="memdesc:a4f1e7668468b9fdaa7aa8c6d3afc76e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates statusbar text with the data from the file passed as a parameter.  <a href="gui__edit_8c.html#a4f1e7668468b9fdaa7aa8c6d3afc76e2">More...</a><br /></td></tr>
+<tr class="separator:a4f1e7668468b9fdaa7aa8c6d3afc76e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c83847e40c7733b59d9a2a9311313fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a5c83847e40c7733b59d9a2a9311313fe">log_file_list</a> ()</td></tr>
 <tr class="separator:a5c83847e40c7733b59d9a2a9311313fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0abf0528052793453826e63826a71c"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a4d0abf0528052793453826e63826a71c">gui_edit_init</a> (GtkApplication *app)</td></tr>
-<tr class="memdesc:a4d0abf0528052793453826e63826a71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the main application window responsible for allowing the user to edit the code.  <a href="gui__edit_8c.html#a4d0abf0528052793453826e63826a71c">More...</a><br /></td></tr>
-<tr class="separator:a4d0abf0528052793453826e63826a71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cf3d556072c4a2c053643d78a33ae5"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a24cf3d556072c4a2c053643d78a33ae5">gui_edit_init</a> (GtkApplication *app, int cmd_files_num, char **cmd_files_str)</td></tr>
+<tr class="memdesc:a24cf3d556072c4a2c053643d78a33ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the main application window responsible for allowing the user to edit the code.  <a href="gui__edit_8c.html#a24cf3d556072c4a2c053643d78a33ae5">More...</a><br /></td></tr>
+<tr class="separator:a24cf3d556072c4a2c053643d78a33ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9cddf5be0ab874d29da2b9dceafc0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structeditor__file.html">editor_file</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#afa9cddf5be0ab874d29da2b9dceafc0f">gui_edit_get_selected_file</a> ()</td></tr>
 <tr class="separator:afa9cddf5be0ab874d29da2b9dceafc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c456445bb8064bd5c0d142c34af1a3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a9c456445bb8064bd5c0d142c34af1a3c">gui_edit_close_file</a> (<a class="el" href="editor__file_8h.html#a9ed9dddb2d11bfa3cbcb15f0094d1431">editor_file_id</a> id)</td></tr>
@@ -113,6 +121,12 @@ Functions</h2></td></tr>
 <tr class="memitem:afb73ec36119c6a8bfe616d8a70576063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#afb73ec36119c6a8bfe616d8a70576063">gui_edit_add_random_file</a> (GSimpleAction *action, GVariant *parameter, gpointer user_data)</td></tr>
 <tr class="memdesc:afb73ec36119c6a8bfe616d8a70576063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just a debug function to add a file with random contets.  <a href="gui__edit_8c.html#afb73ec36119c6a8bfe616d8a70576063">More...</a><br /></td></tr>
 <tr class="separator:afb73ec36119c6a8bfe616d8a70576063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b043dfb70c05eb2ef20e03168e1469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a07b043dfb70c05eb2ef20e03168e1469">gui_edit_set_wrap</a> (int b)</td></tr>
+<tr class="separator:a07b043dfb70c05eb2ef20e03168e1469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d88b0c4d534bef4b7e81ae6174412a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#a0d88b0c4d534bef4b7e81ae6174412a1">gui_edit_set_whitespace</a> (int b)</td></tr>
+<tr class="separator:a0d88b0c4d534bef4b7e81ae6174412a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1157fc9b216a3aebf84f02e54d6735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit_8c.html#abb1157fc9b216a3aebf84f02e54d6735">gui_edit_set_line_numbers</a> (int b)</td></tr>
+<tr class="separator:abb1157fc9b216a3aebf84f02e54d6735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -253,8 +267,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d0abf0528052793453826e63826a71c" name="a4d0abf0528052793453826e63826a71c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0abf0528052793453826e63826a71c">&#9670;&nbsp;</a></span>gui_edit_init()</h2>
+<a id="a24cf3d556072c4a2c053643d78a33ae5" name="a24cf3d556072c4a2c053643d78a33ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cf3d556072c4a2c053643d78a33ae5">&#9670;&nbsp;</a></span>gui_edit_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,8 +277,24 @@ Variables</h2></td></tr>
           <td class="memname">GtkWidget * gui_edit_init </td>
           <td>(</td>
           <td class="paramtype">GtkApplication *&#160;</td>
-          <td class="paramname"><em>app</em></td><td>)</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cmd_files_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>cmd_files_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,6 +306,105 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abb1157fc9b216a3aebf84f02e54d6735" name="abb1157fc9b216a3aebf84f02e54d6735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1157fc9b216a3aebf84f02e54d6735">&#9670;&nbsp;</a></span>gui_edit_set_line_numbers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_set_line_numbers </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d88b0c4d534bef4b7e81ae6174412a1" name="a0d88b0c4d534bef4b7e81ae6174412a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d88b0c4d534bef4b7e81ae6174412a1">&#9670;&nbsp;</a></span>gui_edit_set_whitespace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_set_whitespace </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07b043dfb70c05eb2ef20e03168e1469" name="a07b043dfb70c05eb2ef20e03168e1469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b043dfb70c05eb2ef20e03168e1469">&#9670;&nbsp;</a></span>gui_edit_set_wrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_set_wrap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f1e7668468b9fdaa7aa8c6d3afc76e2" name="a4f1e7668468b9fdaa7aa8c6d3afc76e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1e7668468b9fdaa7aa8c6d3afc76e2">&#9670;&nbsp;</a></span>gui_edit_statusbar_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_statusbar_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structeditor__file.html">editor_file</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates statusbar text with the data from the file passed as a parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Pointer to file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf9f7637bc48efffda617973c9b40f0c" name="aaf9f7637bc48efffda617973c9b40f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9f7637bc48efffda617973c9b40f0c">&#9670;&nbsp;</a></span>gui_edit_update_titles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_update_titles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function interates through every open file and updates it's title on the notebook based on whether there are unsaved changes. (Shows the asterisk in case) </p>
 
 </div>
 </div>
@@ -321,32 +450,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab532aaa1ddf72b96ff0e3a930d6c0148" name="ab532aaa1ddf72b96ff0e3a930d6c0148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab532aaa1ddf72b96ff0e3a930d6c0148">&#9670;&nbsp;</a></span>statusbar_update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void statusbar_update </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structeditor__file.html">editor_file</a> *&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates statusbar text with the data from the file passed as a parameter. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>Pointer to file </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

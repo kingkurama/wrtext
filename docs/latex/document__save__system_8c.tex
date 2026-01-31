@@ -1,0 +1,44 @@
+\hypertarget{document__save__system_8c}{}\doxysection{src/document\+\_\+save\+\_\+system.c File Reference}
+\label{document__save__system_8c}\index{src/document\_save\_system.c@{src/document\_save\_system.c}}
+{\ttfamily \#include \char`\"{}document\+\_\+save\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+directory\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDocumentHeader}{Document\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{document__save__system_8c_a423765672594a6635ca8cba36d0f1def}{get\+\_\+document\+\_\+offset}} (FILE $\ast$f, const char $\ast$path)
+\item 
+\mbox{\hyperlink{structDocument}{Document}} \mbox{\hyperlink{document__save__system_8c_adaf213e2c9bffda284ff3e1b29f90bcf}{get\+\_\+document}} (const char $\ast$path)
+\item 
+int \mbox{\hyperlink{document__save__system_8c_acff6e153152b29805ded53b6883d5f7f}{save\+\_\+document}} (\mbox{\hyperlink{structDocument}{Document}} document)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{document__save__system_8c_adaf213e2c9bffda284ff3e1b29f90bcf}\label{document__save__system_8c_adaf213e2c9bffda284ff3e1b29f90bcf}} 
+\index{document\_save\_system.c@{document\_save\_system.c}!get\_document@{get\_document}}
+\index{get\_document@{get\_document}!document\_save\_system.c@{document\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{get\_document()}{get\_document()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDocument}{Document}} get\+\_\+document (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{document__save__system_8c_a423765672594a6635ca8cba36d0f1def}\label{document__save__system_8c_a423765672594a6635ca8cba36d0f1def}} 
+\index{document\_save\_system.c@{document\_save\_system.c}!get\_document\_offset@{get\_document\_offset}}
+\index{get\_document\_offset@{get\_document\_offset}!document\_save\_system.c@{document\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{get\_document\_offset()}{get\_document\_offset()}}
+{\footnotesize\ttfamily long get\+\_\+document\+\_\+offset (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{f,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{document__save__system_8c_acff6e153152b29805ded53b6883d5f7f}\label{document__save__system_8c_acff6e153152b29805ded53b6883d5f7f}} 
+\index{document\_save\_system.c@{document\_save\_system.c}!save\_document@{save\_document}}
+\index{save\_document@{save\_document}!document\_save\_system.c@{document\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{save\_document()}{save\_document()}}
+{\footnotesize\ttfamily int save\+\_\+document (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDocument}{Document}}}]{document }\end{DoxyParamCaption})}
+

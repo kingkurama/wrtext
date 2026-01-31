@@ -6,11 +6,17 @@
 \DoxyCodeLine{2 \textcolor{comment}{ * Simple file dialog helpers using GtkFileChooserDialog}}
 \DoxyCodeLine{3 \textcolor{comment}{ */}}
 \DoxyCodeLine{4 }
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#pragma once}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <gtk/gtk.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef FILE\_DIALOG\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define FILE\_DIALOG\_H}}
 \DoxyCodeLine{7 }
-\DoxyCodeLine{18 \textcolor{keywordtype}{char} *\mbox{\hyperlink{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}{file\_dialog\_open\_file}}(GtkWindow *parent);}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{32 \textcolor{keywordtype}{char} *\mbox{\hyperlink{file__dialog_8h_a1f5d723578d4e7dc5fc64c99e4500178}{file\_dialog\_save\_file}}(GtkWindow *parent, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *suggested\_name);}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <gtk/gtk.h>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{20 \textcolor{keywordtype}{char} *\mbox{\hyperlink{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}{file\_dialog\_open\_file}}(GtkWindow *\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}});}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{34 \textcolor{keywordtype}{char} *\mbox{\hyperlink{file__dialog_8h_a1f5d723578d4e7dc5fc64c99e4500178}{file\_dialog\_save\_file}}(GtkWindow *\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}}, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *suggested\_name);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{49 \textcolor{keywordtype}{char} *\mbox{\hyperlink{file__dialog_8h_afcb1efd06203c5292e84d5844b928746}{file\_dialog\_create\_file}}(GtkWindow *\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}}, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *suggested\_name);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* FILE\_DIALOG\_H */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

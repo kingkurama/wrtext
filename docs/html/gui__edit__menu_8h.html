@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">WRText<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">WRText<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -84,10 +84,33 @@ Functions</h2></td></tr>
 <tr class="memitem:a537bc95073903e3fa2f173c047ea0d25"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit__menu_8h.html#a537bc95073903e3fa2f173c047ea0d25">gui_edit_menu_init</a> (GtkApplication *app)</td></tr>
 <tr class="memdesc:a537bc95073903e3fa2f173c047ea0d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the menu bar of the edit window.  <a href="gui__edit__menu_8h.html#a537bc95073903e3fa2f173c047ea0d25">More...</a><br /></td></tr>
 <tr class="separator:a537bc95073903e3fa2f173c047ea0d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918832052822bd5fccd3781186a9114c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit__menu_8h.html#a918832052822bd5fccd3781186a9114c">gui_edit_menu_open_file</a> (char *file_path)</td></tr>
+<tr class="memdesc:a918832052822bd5fccd3781186a9114c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions starts the whole process of opening a file. It receives the file path, it reads the file from the filesystem, it create the <a class="el" href="structeditor__file.html" title="Structure that represents a file that can be edited and saved by the editor.">editor_file</a> and loads it on the GUI.  <a href="gui__edit__menu_8h.html#a918832052822bd5fccd3781186a9114c">More...</a><br /></td></tr>
+<tr class="separator:a918832052822bd5fccd3781186a9114c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717ecf50079f610ed4e477003d0be44f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui__edit__menu_8h.html#a717ecf50079f610ed4e477003d0be44f">gui_edit_menu_enable_saving</a> (gboolean b)</td></tr>
+<tr class="separator:a717ecf50079f610ed4e477003d0be44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The files <a class="el" href="gui__edit__menu_8h.html" title="The files gui_edit_menu.h and gui_edit_menu.c contains the code related to the menubar in the edit wi...">gui_edit_menu.h</a> and <a class="el" href="gui__edit__menu_8c.html">gui_edit_menu.c</a> contains the code related to the menubar in the edit window. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a717ecf50079f610ed4e477003d0be44f" name="a717ecf50079f610ed4e477003d0be44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717ecf50079f610ed4e477003d0be44f">&#9670;&nbsp;</a></span>gui_edit_menu_enable_saving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_menu_enable_saving </td>
+          <td>(</td>
+          <td class="paramtype">gboolean&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a537bc95073903e3fa2f173c047ea0d25" name="a537bc95073903e3fa2f173c047ea0d25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a537bc95073903e3fa2f173c047ea0d25">&#9670;&nbsp;</a></span>gui_edit_menu_init()</h2>
 
@@ -108,6 +131,32 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">app</td><td>Pointer to the GTK application </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a918832052822bd5fccd3781186a9114c" name="a918832052822bd5fccd3781186a9114c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918832052822bd5fccd3781186a9114c">&#9670;&nbsp;</a></span>gui_edit_menu_open_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gui_edit_menu_open_file </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This functions starts the whole process of opening a file. It receives the file path, it reads the file from the filesystem, it create the <a class="el" href="structeditor__file.html" title="Structure that represents a file that can be edited and saved by the editor.">editor_file</a> and loads it on the GUI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>Path to the file to load (PATH IS FREED BY THIS FUNCTION!) </td></tr>
   </table>
   </dd>
 </dl>

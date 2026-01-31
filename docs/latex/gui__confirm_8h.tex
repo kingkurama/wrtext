@@ -1,0 +1,46 @@
+\hypertarget{gui__confirm_8h}{}\doxysection{src/gui\+\_\+confirm.h File Reference}
+\label{gui__confirm_8h}\index{src/gui\_confirm.h@{src/gui\_confirm.h}}
+
+
+\mbox{\hyperlink{gui__confirm_8h}{gui\+\_\+confirm.\+h}} and \mbox{\hyperlink{gui__confirm_8c}{gui\+\_\+confirm.\+c}} contain the code for showing a confirm dialog when the user tries to close a file with unsaved changes or the application.  
+
+
+{\ttfamily \#include \char`\"{}editor\+\_\+file.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gui__confirm_8h_a4561c023bfd501e29f562ca1c060813f}{gui\+\_\+confirm\+\_\+init}} (Gtk\+Widget $\ast$\mbox{\hyperlink{gui__settings_8c_a4583c67a7e929ce8c51bd25c8818d50c}{parent\+\_\+window}})
+\item 
+void \mbox{\hyperlink{gui__confirm_8h_ab738712d94590253d68749a5a55120b6}{gui\+\_\+confirm\+\_\+show}} (\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\+\_\+file\+\_\+id}} ef)
+\begin{DoxyCompactList}\small\item\em This function shows a dialog to the user asking whether to close without changes or cancel the close operation. The function itself handles the closing, it can be used when closing a single file or the whole application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{gui__confirm_8h}{gui\+\_\+confirm.\+h}} and \mbox{\hyperlink{gui__confirm_8c}{gui\+\_\+confirm.\+c}} contain the code for showing a confirm dialog when the user tries to close a file with unsaved changes or the application. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gui__confirm_8h_a4561c023bfd501e29f562ca1c060813f}\label{gui__confirm_8h_a4561c023bfd501e29f562ca1c060813f}} 
+\index{gui\_confirm.h@{gui\_confirm.h}!gui\_confirm\_init@{gui\_confirm\_init}}
+\index{gui\_confirm\_init@{gui\_confirm\_init}!gui\_confirm.h@{gui\_confirm.h}}
+\doxysubsubsection{\texorpdfstring{gui\_confirm\_init()}{gui\_confirm\_init()}}
+{\footnotesize\ttfamily void gui\+\_\+confirm\+\_\+init (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{parent\+\_\+window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gui__confirm_8h_ab738712d94590253d68749a5a55120b6}\label{gui__confirm_8h_ab738712d94590253d68749a5a55120b6}} 
+\index{gui\_confirm.h@{gui\_confirm.h}!gui\_confirm\_show@{gui\_confirm\_show}}
+\index{gui\_confirm\_show@{gui\_confirm\_show}!gui\_confirm.h@{gui\_confirm.h}}
+\doxysubsubsection{\texorpdfstring{gui\_confirm\_show()}{gui\_confirm\_show()}}
+{\footnotesize\ttfamily void gui\+\_\+confirm\+\_\+show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\+\_\+file\+\_\+id}}}]{ef }\end{DoxyParamCaption})}
+
+
+
+This function shows a dialog to the user asking whether to close without changes or cancel the close operation. The function itself handles the closing, it can be used when closing a single file or the whole application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ef} & The ID of the closed file. The application will close this file if the user accepts. If passed -\/1 it will close the whole application instead \\
+\hline
+\end{DoxyParams}

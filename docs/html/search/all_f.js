@@ -1,4 +1,25 @@
 var searchData=
 [
-  ['vbox_0',['vbox',['../gui__edit_8c.html#a4135ce280f2ff654540c78e33ce96228',1,'gui_edit.c']]]
+  ['save_5fdocument_0',['save_document',['../document__save__system_8h.html#a826842da6c4e47d5a132e4b201004c6a',1,'save_document(Document):&#160;document_save_system.c'],['../document__save__system_8c.html#acff6e153152b29805ded53b6883d5f7f',1,'save_document(Document document):&#160;document_save_system.c']]],
+  ['scrollposition_1',['scrollPosition',['../structDocument.html#ac82d1b00a04c3e6709e04b898259388d',1,'Document']]],
+  ['selectrange_2',['selectRange',['../structDocument.html#a6a8209ef9c94ff3f726657f9c5f8c216',1,'Document']]],
+  ['settings_2ec_3',['settings.c',['../settings_8c.html',1,'']]],
+  ['settings_2eh_4',['settings.h',['../settings_8h.html',1,'']]],
+  ['settings_5fapply_5',['settings_apply',['../settings_8h.html#ab2cd0a47ab1ae964ee1ef1ab8cc99e73',1,'settings_apply():&#160;settings.c'],['../settings_8c.html#ab2cd0a47ab1ae964ee1ef1ab8cc99e73',1,'settings_apply():&#160;settings.c']]],
+  ['settings_5fentry_6',['Settings_Entry',['../structSettings__Entry.html',1,'']]],
+  ['settings_5ffile_5fload_7',['settings_file_load',['../settings__save__system_8c.html#afb6c0a5b3311a9d622b26106bbc6afbc',1,'settings_file_load():&#160;settings_save_system.c'],['../settings__save__system_8h.html#afb6c0a5b3311a9d622b26106bbc6afbc',1,'settings_file_load():&#160;settings_save_system.c']]],
+  ['settings_5ffile_5fname_8',['SETTINGS_FILE_NAME',['../settings__save__system_8h.html#a22675546c490e1610250c14003ddd67c',1,'settings_save_system.h']]],
+  ['settings_5ffile_5fsave_9',['settings_file_save',['../settings__save__system_8c.html#adcaf265b8503c5894568a3afaed0127c',1,'settings_file_save():&#160;settings_save_system.c'],['../settings__save__system_8h.html#adcaf265b8503c5894568a3afaed0127c',1,'settings_file_save():&#160;settings_save_system.c']]],
+  ['settings_5fget_10',['settings_get',['../settings_8c.html#a2ff96754708baec1aaebf57c147ff9ff',1,'settings_get():&#160;settings.c'],['../settings_8h.html#a2ff96754708baec1aaebf57c147ff9ff',1,'settings_get():&#160;settings.c']]],
+  ['settings_5fint_11',['SETTINGS_INT',['../settings__save__system_8c.html#a250a2106c1244597c3425c21b1f62751ae7358764725c4a913c7ff8354ab18330',1,'settings_save_system.c']]],
+  ['settings_5fsave_5fsystem_2ec_12',['settings_save_system.c',['../settings__save__system_8c.html',1,'']]],
+  ['settings_5fsave_5fsystem_2eh_13',['settings_save_system.h',['../settings__save__system_8h.html',1,'']]],
+  ['settings_5fset_14',['settings_set',['../settings_8h.html#a8e44975e54c7679bfba1d5f2d268632d',1,'settings_set(settings_state *s):&#160;settings.c'],['../settings_8c.html#a8e44975e54c7679bfba1d5f2d268632d',1,'settings_set(settings_state *s):&#160;settings.c']]],
+  ['settings_5fstate_15',['settings_state',['../structsettings__state.html',1,'']]],
+  ['settings_5fstring_16',['SETTINGS_STRING',['../settings__save__system_8c.html#a250a2106c1244597c3425c21b1f62751acdf04ebc8ab7dfa1b0b0c91fccdf23f0',1,'settings_save_system.c']]],
+  ['settings_5ftype_17',['Settings_Type',['../settings__save__system_8c.html#a250a2106c1244597c3425c21b1f62751',1,'settings_save_system.c']]],
+  ['settings_5fwindow_18',['settings_window',['../gui__settings_8c.html#afc5bb7c1f1bd4441b528f7e66c3817b5',1,'gui_settings.c']]],
+  ['size_19',['size',['../structeditor__file.html#a3201e323a30609fad9adfc2738491c99',1,'editor_file']]],
+  ['statusbar_20',['statusbar',['../gui__edit_8c.html#a22c97d796c5f592c603bab82cfa9cc44',1,'gui_edit.c']]],
+  ['strip_5fquotes_21',['strip_quotes',['../settings__save__system_8c.html#a8b0be991b27cec2cf38a11426947643c',1,'settings_save_system.c']]]
 ];

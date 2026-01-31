@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['settings_5fwindow_0',['settings_window',['../gui__settings_8c.html#afc5bb7c1f1bd4441b528f7e66c3817b5',1,'gui_settings.c']]],
-  ['size_1',['size',['../structeditor__file.html#a3201e323a30609fad9adfc2738491c99',1,'editor_file']]],
-  ['statusbar_2',['statusbar',['../gui__edit_8c.html#a22c97d796c5f592c603bab82cfa9cc44',1,'gui_edit.c']]]
+  ['language_0',['language',['../structDocument.html#afc3c6c4cffbae75e382762fb3039fa92',1,'Document']]],
+  ['lastedited_1',['lastEdited',['../structDocument.html#aaab63fbf85b5aa1099b90366b9d5ba41',1,'Document']]],
+  ['length_2',['length',['../structeditor__file__list.html#ab7af5f3b277f5f3e17a93019ad253e3b',1,'editor_file_list']]],
+  ['linenums_3',['linenums',['../structsettings__state.html#af3cc85b752cbf55335cd543618bd3cbe',1,'settings_state']]],
+  ['lines_4',['lines',['../structeditor__file.html#a7fd4f2502afd850bb41c3ed58531abf0',1,'editor_file']]]
 ];

@@ -8,6 +8,7 @@ Implementations for GTK file dialogs.
 {\ttfamily \#include \char`\"{}file\+\_\+dialog.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$gio/gio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -16,10 +17,12 @@ struct \mbox{\hyperlink{structfd__cbdata}{fd\+\_\+cbdata}}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char $\ast$ \mbox{\hyperlink{file__dialog_8c_a4566ec2f371c57f3997e76f8a30d4f80}{file\+\_\+dialog\+\_\+open\+\_\+file}} (Gtk\+Window $\ast$parent)
+char $\ast$ \mbox{\hyperlink{file__dialog_8c_a4566ec2f371c57f3997e76f8a30d4f80}{file\+\_\+dialog\+\_\+open\+\_\+file}} (Gtk\+Window $\ast$\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}})
 \begin{DoxyCompactList}\small\item\em Show a blocking \char`\"{}\+Open File\char`\"{} dialog and return the chosen path. \end{DoxyCompactList}\item 
-char $\ast$ \mbox{\hyperlink{file__dialog_8c_a1f5d723578d4e7dc5fc64c99e4500178}{file\+\_\+dialog\+\_\+save\+\_\+file}} (Gtk\+Window $\ast$parent, const char $\ast$suggested\+\_\+name)
-\begin{DoxyCompactList}\small\item\em Show a blocking \char`\"{}\+Save File\char`\"{} dialog and return the chosen path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+char $\ast$ \mbox{\hyperlink{file__dialog_8c_a1f5d723578d4e7dc5fc64c99e4500178}{file\+\_\+dialog\+\_\+save\+\_\+file}} (Gtk\+Window $\ast$\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}}, const char $\ast$suggested\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Show a blocking \char`\"{}\+Save File\char`\"{} dialog and return the chosen path. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{file__dialog_8c_afcb1efd06203c5292e84d5844b928746}{file\+\_\+dialog\+\_\+create\+\_\+file}} (Gtk\+Window $\ast$\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}}, const char $\ast$suggested\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Show a blocking \char`\"{}\+Create File\char`\"{} dialog and return the chosen path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -28,7 +31,19 @@ Implementations for GTK file dialogs.
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{file__dialog_8c_a4566ec2f371c57f3997e76f8a30d4f80}\label{file__dialog_8c_a4566ec2f371c57f3997e76f8a30d4f80}} 
+\mbox{\Hypertarget{file__dialog_8c_afcb1efd06203c5292e84d5844b928746}\label{file__dialog_8c_afcb1efd06203c5292e84d5844b928746}} 
+\index{file\_dialog.c@{file\_dialog.c}!file\_dialog\_create\_file@{file\_dialog\_create\_file}}
+\index{file\_dialog\_create\_file@{file\_dialog\_create\_file}!file\_dialog.c@{file\_dialog.c}}
+\doxysubsubsection{\texorpdfstring{file\_dialog\_create\_file()}{file\_dialog\_create\_file()}}
+{\footnotesize\ttfamily char $\ast$ file\+\_\+dialog\+\_\+create\+\_\+file (\begin{DoxyParamCaption}\item[{Gtk\+Window $\ast$}]{parent,  }\item[{const char $\ast$}]{suggested\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Show a blocking \char`\"{}\+Create File\char`\"{} dialog and return the chosen path. 
+
+Show a GTK file chooser dialog to create a new file.
+
+The returned string must be freed with g\+\_\+free() by the caller. \mbox{\Hypertarget{file__dialog_8c_a4566ec2f371c57f3997e76f8a30d4f80}\label{file__dialog_8c_a4566ec2f371c57f3997e76f8a30d4f80}} 
 \index{file\_dialog.c@{file\_dialog.c}!file\_dialog\_open\_file@{file\_dialog\_open\_file}}
 \index{file\_dialog\_open\_file@{file\_dialog\_open\_file}!file\_dialog.c@{file\_dialog.c}}
 \doxysubsubsection{\texorpdfstring{file\_dialog\_open\_file()}{file\_dialog\_open\_file()}}

@@ -1,0 +1,79 @@
+\hypertarget{settings__save__system_8c}{}\doxysection{src/settings\+\_\+save\+\_\+system.c File Reference}
+\label{settings__save__system_8c}\index{src/settings\_save\_system.c@{src/settings\_save\_system.c}}
+{\ttfamily \#include \char`\"{}settings\+\_\+save\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+directory\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}settings.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSettings__Entry}{Settings\+\_\+\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751}{Settings\+\_\+\+Type}} \{ \mbox{\hyperlink{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751ae7358764725c4a913c7ff8354ab18330}{SETTINGS\+\_\+\+INT}}
+, \mbox{\hyperlink{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751acdf04ebc8ab7dfa1b0b0c91fccdf23f0}{SETTINGS\+\_\+\+STRING}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{settings__save__system_8c_a0864f825628874d6ffb73922e3138c0c}{trim}} (char $\ast$s)
+\item 
+int \mbox{\hyperlink{settings__save__system_8c_a8b0be991b27cec2cf38a11426947643c}{strip\+\_\+quotes}} (char $\ast$s)
+\item 
+int \mbox{\hyperlink{settings__save__system_8c_afb6c0a5b3311a9d622b26106bbc6afbc}{settings\+\_\+file\+\_\+load}} ()
+\item 
+int \mbox{\hyperlink{settings__save__system_8c_adcaf265b8503c5894568a3afaed0127c}{settings\+\_\+file\+\_\+save}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751}\label{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751}} 
+\index{settings\_save\_system.c@{settings\_save\_system.c}!Settings\_Type@{Settings\_Type}}
+\index{Settings\_Type@{Settings\_Type}!settings\_save\_system.c@{settings\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{Settings\_Type}{Settings\_Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751}{Settings\+\_\+\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTINGS\_INT@{SETTINGS\_INT}!settings\_save\_system.c@{settings\_save\_system.c}}\index{settings\_save\_system.c@{settings\_save\_system.c}!SETTINGS\_INT@{SETTINGS\_INT}}}\mbox{\Hypertarget{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751ae7358764725c4a913c7ff8354ab18330}\label{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751ae7358764725c4a913c7ff8354ab18330}} 
+SETTINGS\+\_\+\+INT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTINGS\_STRING@{SETTINGS\_STRING}!settings\_save\_system.c@{settings\_save\_system.c}}\index{settings\_save\_system.c@{settings\_save\_system.c}!SETTINGS\_STRING@{SETTINGS\_STRING}}}\mbox{\Hypertarget{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751acdf04ebc8ab7dfa1b0b0c91fccdf23f0}\label{settings__save__system_8c_a250a2106c1244597c3425c21b1f62751acdf04ebc8ab7dfa1b0b0c91fccdf23f0}} 
+SETTINGS\+\_\+\+STRING&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{settings__save__system_8c_afb6c0a5b3311a9d622b26106bbc6afbc}\label{settings__save__system_8c_afb6c0a5b3311a9d622b26106bbc6afbc}} 
+\index{settings\_save\_system.c@{settings\_save\_system.c}!settings\_file\_load@{settings\_file\_load}}
+\index{settings\_file\_load@{settings\_file\_load}!settings\_save\_system.c@{settings\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{settings\_file\_load()}{settings\_file\_load()}}
+{\footnotesize\ttfamily int settings\+\_\+file\+\_\+load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{settings__save__system_8c_adcaf265b8503c5894568a3afaed0127c}\label{settings__save__system_8c_adcaf265b8503c5894568a3afaed0127c}} 
+\index{settings\_save\_system.c@{settings\_save\_system.c}!settings\_file\_save@{settings\_file\_save}}
+\index{settings\_file\_save@{settings\_file\_save}!settings\_save\_system.c@{settings\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{settings\_file\_save()}{settings\_file\_save()}}
+{\footnotesize\ttfamily int settings\+\_\+file\+\_\+save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{settings__save__system_8c_a8b0be991b27cec2cf38a11426947643c}\label{settings__save__system_8c_a8b0be991b27cec2cf38a11426947643c}} 
+\index{settings\_save\_system.c@{settings\_save\_system.c}!strip\_quotes@{strip\_quotes}}
+\index{strip\_quotes@{strip\_quotes}!settings\_save\_system.c@{settings\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{strip\_quotes()}{strip\_quotes()}}
+{\footnotesize\ttfamily int strip\+\_\+quotes (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{settings__save__system_8c_a0864f825628874d6ffb73922e3138c0c}\label{settings__save__system_8c_a0864f825628874d6ffb73922e3138c0c}} 
+\index{settings\_save\_system.c@{settings\_save\_system.c}!trim@{trim}}
+\index{trim@{trim}!settings\_save\_system.c@{settings\_save\_system.c}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily void trim (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+

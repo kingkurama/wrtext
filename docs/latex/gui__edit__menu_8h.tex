@@ -11,7 +11,11 @@ The files \mbox{\hyperlink{gui__edit__menu_8h}{gui\+\_\+edit\+\_\+menu.\+h}} and
 \begin{DoxyCompactItemize}
 \item 
 Gtk\+Widget $\ast$ \mbox{\hyperlink{gui__edit__menu_8h_a537bc95073903e3fa2f173c047ea0d25}{gui\+\_\+edit\+\_\+menu\+\_\+init}} (Gtk\+Application $\ast$app)
-\begin{DoxyCompactList}\small\item\em Initializes the menu bar of the edit window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initializes the menu bar of the edit window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gui__edit__menu_8h_a918832052822bd5fccd3781186a9114c}{gui\+\_\+edit\+\_\+menu\+\_\+open\+\_\+file}} (char $\ast$file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em This functions starts the whole process of opening a file. It receives the file path, it reads the file from the filesystem, it create the \mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} and loads it on the GUI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gui__edit__menu_8h_a717ecf50079f610ed4e477003d0be44f}{gui\+\_\+edit\+\_\+menu\+\_\+enable\+\_\+saving}} (gboolean b)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -20,6 +24,12 @@ The files \mbox{\hyperlink{gui__edit__menu_8h}{gui\+\_\+edit\+\_\+menu.\+h}} and
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gui__edit__menu_8h_a717ecf50079f610ed4e477003d0be44f}\label{gui__edit__menu_8h_a717ecf50079f610ed4e477003d0be44f}} 
+\index{gui\_edit\_menu.h@{gui\_edit\_menu.h}!gui\_edit\_menu\_enable\_saving@{gui\_edit\_menu\_enable\_saving}}
+\index{gui\_edit\_menu\_enable\_saving@{gui\_edit\_menu\_enable\_saving}!gui\_edit\_menu.h@{gui\_edit\_menu.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_menu\_enable\_saving()}{gui\_edit\_menu\_enable\_saving()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+menu\+\_\+enable\+\_\+saving (\begin{DoxyParamCaption}\item[{gboolean}]{b }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{gui__edit__menu_8h_a537bc95073903e3fa2f173c047ea0d25}\label{gui__edit__menu_8h_a537bc95073903e3fa2f173c047ea0d25}} 
 \index{gui\_edit\_menu.h@{gui\_edit\_menu.h}!gui\_edit\_menu\_init@{gui\_edit\_menu\_init}}
 \index{gui\_edit\_menu\_init@{gui\_edit\_menu\_init}!gui\_edit\_menu.h@{gui\_edit\_menu.h}}
@@ -33,5 +43,20 @@ Initializes the menu bar of the edit window.
 
 \begin{DoxyParams}{Parameters}
 {\em app} & Pointer to the GTK application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gui__edit__menu_8h_a918832052822bd5fccd3781186a9114c}\label{gui__edit__menu_8h_a918832052822bd5fccd3781186a9114c}} 
+\index{gui\_edit\_menu.h@{gui\_edit\_menu.h}!gui\_edit\_menu\_open\_file@{gui\_edit\_menu\_open\_file}}
+\index{gui\_edit\_menu\_open\_file@{gui\_edit\_menu\_open\_file}!gui\_edit\_menu.h@{gui\_edit\_menu.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_menu\_open\_file()}{gui\_edit\_menu\_open\_file()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+menu\+\_\+open\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+This functions starts the whole process of opening a file. It receives the file path, it reads the file from the filesystem, it create the \mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} and loads it on the GUI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Path to the file to load (PATH IS FREED BY THIS FUNCTION!) \\
 \hline
 \end{DoxyParams}

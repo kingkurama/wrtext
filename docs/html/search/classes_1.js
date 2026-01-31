@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fd_5fcbdata_0',['fd_cbdata',['../structfd__cbdata.html',1,'']]]
+  ['document_0',['Document',['../structDocument.html',1,'']]],
+  ['documentheader_1',['DocumentHeader',['../structDocumentHeader.html',1,'']]]
 ];

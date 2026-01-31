@@ -5,18 +5,27 @@
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{editor__file_8h}{editor\_file.h}}"{}}}
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#include <gtk/gtk.h>}}
 \DoxyCodeLine{3 }
-\DoxyCodeLine{17 GtkWidget *\mbox{\hyperlink{gui__edit_8h_a4d0abf0528052793453826e63826a71c}{gui\_edit\_init}}(GtkApplication *app);}
+\DoxyCodeLine{17 GtkWidget *\mbox{\hyperlink{gui__edit_8h_a24cf3d556072c4a2c053643d78a33ae5}{gui\_edit\_init}}(GtkApplication *app,\textcolor{keywordtype}{int} cmd\_files\_num, \textcolor{keywordtype}{char} **cmd\_files\_str);}
 \DoxyCodeLine{18 }
-\DoxyCodeLine{19 }
-\DoxyCodeLine{25 \mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\_file\_id}} \mbox{\hyperlink{gui__edit_8h_a9526d247352bb14be4f467ee4953c131}{gui\_edit\_add\_file}}(\mbox{\hyperlink{structeditor__file}{editor\_file}} *f);}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{31 \textcolor{keywordtype}{int} \mbox{\hyperlink{gui__edit_8h_a9c456445bb8064bd5c0d142c34af1a3c}{gui\_edit\_close\_file}}(\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\_file\_id}} \textcolor{keywordtype}{id});}
-\DoxyCodeLine{32 }
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_a6071253091095e91b5b17493c3609325}{gui\_edit\_cleanup}}();}
-\DoxyCodeLine{35 }
-\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_afb73ec36119c6a8bfe616d8a70576063}{gui\_edit\_add\_random\_file}}(GSimpleAction *action, GVariant *parameter, gpointer user\_data);}
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41 \mbox{\hyperlink{structeditor__file}{editor\_file}} *\mbox{\hyperlink{gui__edit_8h_afa9cddf5be0ab874d29da2b9dceafc0f}{gui\_edit\_get\_selected\_file}}();}
+\DoxyCodeLine{23 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_a4f1e7668468b9fdaa7aa8c6d3afc76e2}{gui\_edit\_statusbar\_update}}(\mbox{\hyperlink{structeditor__file}{editor\_file}} *f); \textcolor{comment}{// Might be a bad design decision to make this accessible to other modules}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_aaf9f7637bc48efffda617973c9b40f0c}{gui\_edit\_update\_titles}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{35 \mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\_file\_id}} \mbox{\hyperlink{gui__edit_8h_a9526d247352bb14be4f467ee4953c131}{gui\_edit\_add\_file}}(\mbox{\hyperlink{structeditor__file}{editor\_file}} *f);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{int} \mbox{\hyperlink{gui__edit_8h_a9c456445bb8064bd5c0d142c34af1a3c}{gui\_edit\_close\_file}}(\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\_file\_id}} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_a6071253091095e91b5b17493c3609325}{gui\_edit\_cleanup}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{49 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_afb73ec36119c6a8bfe616d8a70576063}{gui\_edit\_add\_random\_file}}(GSimpleAction *action, GVariant *parameter, gpointer user\_data);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \mbox{\hyperlink{structeditor__file}{editor\_file}} *\mbox{\hyperlink{gui__edit_8h_afa9cddf5be0ab874d29da2b9dceafc0f}{gui\_edit\_get\_selected\_file}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_a07b043dfb70c05eb2ef20e03168e1469}{gui\_edit\_set\_wrap}}(\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_a0d88b0c4d534bef4b7e81ae6174412a1}{gui\_edit\_set\_whitespace}}(\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keywordtype}{void} \mbox{\hyperlink{gui__edit_8h_abb1157fc9b216a3aebf84f02e54d6735}{gui\_edit\_set\_line\_numbers}}(\textcolor{keywordtype}{int} b);}
 
 \end{DoxyCode}

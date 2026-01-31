@@ -4,14 +4,40 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char $\ast$ \mbox{\hyperlink{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}{file\+\_\+dialog\+\_\+open\+\_\+file}} (Gtk\+Window $\ast$parent)
+char $\ast$ \mbox{\hyperlink{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}{file\+\_\+dialog\+\_\+open\+\_\+file}} (Gtk\+Window $\ast$\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}})
 \begin{DoxyCompactList}\small\item\em Show a GTK file dialog to open a file. \end{DoxyCompactList}\item 
-char $\ast$ \mbox{\hyperlink{file__dialog_8h_a1f5d723578d4e7dc5fc64c99e4500178}{file\+\_\+dialog\+\_\+save\+\_\+file}} (Gtk\+Window $\ast$parent, const char $\ast$suggested\+\_\+name)
-\begin{DoxyCompactList}\small\item\em Show a GTK file chooser dialog to save a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+char $\ast$ \mbox{\hyperlink{file__dialog_8h_a1f5d723578d4e7dc5fc64c99e4500178}{file\+\_\+dialog\+\_\+save\+\_\+file}} (Gtk\+Window $\ast$\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}}, const char $\ast$suggested\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Show a GTK file chooser dialog to save a file. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{file__dialog_8h_afcb1efd06203c5292e84d5844b928746}{file\+\_\+dialog\+\_\+create\+\_\+file}} (Gtk\+Window $\ast$\mbox{\hyperlink{gui__alert_8c_afd7deab3b9e8131e8f8d175b3f880eff}{parent}}, const char $\ast$suggested\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Show a GTK file chooser dialog to create a new file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}\label{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}} 
+\mbox{\Hypertarget{file__dialog_8h_afcb1efd06203c5292e84d5844b928746}\label{file__dialog_8h_afcb1efd06203c5292e84d5844b928746}} 
+\index{file\_dialog.h@{file\_dialog.h}!file\_dialog\_create\_file@{file\_dialog\_create\_file}}
+\index{file\_dialog\_create\_file@{file\_dialog\_create\_file}!file\_dialog.h@{file\_dialog.h}}
+\doxysubsubsection{\texorpdfstring{file\_dialog\_create\_file()}{file\_dialog\_create\_file()}}
+{\footnotesize\ttfamily char $\ast$ file\+\_\+dialog\+\_\+create\+\_\+file (\begin{DoxyParamCaption}\item[{Gtk\+Window $\ast$}]{parent,  }\item[{const char $\ast$}]{suggested\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Show a GTK file chooser dialog to create a new file. 
+
+Presents a modal \char`\"{}\+Create File\char`\"{} dialog that lets the user pick a directory and type a filename. Overwrite confirmation is enabled to avoid accidental replacement. If the user accepts, the returned string is a newly allocated copy (use g\+\_\+free() to free it). Returns NULL if the dialog was cancelled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent window for the dialog. \\
+\hline
+{\em suggested\+\_\+name} & Suggested filename to pre-\/fill. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ Newly allocated path string or NULL.
+\end{DoxyReturn}
+Show a GTK file chooser dialog to create a new file.
+
+The returned string must be freed with g\+\_\+free() by the caller. \mbox{\Hypertarget{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}\label{file__dialog_8h_a4566ec2f371c57f3997e76f8a30d4f80}} 
 \index{file\_dialog.h@{file\_dialog.h}!file\_dialog\_open\_file@{file\_dialog\_open\_file}}
 \index{file\_dialog\_open\_file@{file\_dialog\_open\_file}!file\_dialog.h@{file\_dialog.h}}
 \doxysubsubsection{\texorpdfstring{file\_dialog\_open\_file()}{file\_dialog\_open\_file()}}

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">WRText<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">WRText<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="settings_8h_source.html">settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gui__edit_8h_source.html">gui_edit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="logger_8h_source.html">logger.h</a>&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -83,6 +85,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8e44975e54c7679bfba1d5f2d268632d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#a8e44975e54c7679bfba1d5f2d268632d">settings_set</a> (<a class="el" href="structsettings__state.html">settings_state</a> *s)</td></tr>
 <tr class="memdesc:a8e44975e54c7679bfba1d5f2d268632d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the settings passed as a parameter to the application settings.  <a href="settings_8c.html#a8e44975e54c7679bfba1d5f2d268632d">More...</a><br /></td></tr>
 <tr class="separator:a8e44975e54c7679bfba1d5f2d268632d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cd0a47ab1ae964ee1ef1ab8cc99e73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#ab2cd0a47ab1ae964ee1ef1ab8cc99e73">settings_apply</a> ()</td></tr>
+<tr class="memdesc:ab2cd0a47ab1ae964ee1ef1ab8cc99e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the changes to the application based on the current application settings.  <a href="settings_8c.html#ab2cd0a47ab1ae964ee1ef1ab8cc99e73">More...</a><br /></td></tr>
+<tr class="separator:ab2cd0a47ab1ae964ee1ef1ab8cc99e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -90,6 +95,25 @@ Variables</h2></td></tr>
 <tr class="separator:acdfe61239958404d25456fea30b21e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab2cd0a47ab1ae964ee1ef1ab8cc99e73" name="ab2cd0a47ab1ae964ee1ef1ab8cc99e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2cd0a47ab1ae964ee1ef1ab8cc99e73">&#9670;&nbsp;</a></span>settings_apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void settings_apply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies the changes to the application based on the current application settings. </p>
+
+</div>
+</div>
 <a id="a2ff96754708baec1aaebf57c147ff9ff" name="a2ff96754708baec1aaebf57c147ff9ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ff96754708baec1aaebf57c147ff9ff">&#9670;&nbsp;</a></span>settings_get()</h2>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['result_0',['result',['../structfd__cbdata.html#afd9428850581118f79131b347b86d2e3',1,'fd_cbdata']]]
+  ['key_0',['key',['../structSettings__Entry.html#a1a5a5f6e9f33f969bcf9992747868536',1,'Settings_Entry']]]
 ];

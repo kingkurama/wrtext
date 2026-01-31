@@ -16,7 +16,9 @@ struct \mbox{\hyperlink{structsettings__state}{settings\+\_\+state}}
 \mbox{\hyperlink{structsettings__state}{settings\+\_\+state}} \mbox{\hyperlink{settings_8h_a2ff96754708baec1aaebf57c147ff9ff}{settings\+\_\+get}} ()
 \begin{DoxyCompactList}\small\item\em Returns a copy of the application settings. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{settings_8h_a8e44975e54c7679bfba1d5f2d268632d}{settings\+\_\+set}} (\mbox{\hyperlink{structsettings__state}{settings\+\_\+state}} $\ast$s)
-\begin{DoxyCompactList}\small\item\em Copies the settings passed as a parameter to the application settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Copies the settings passed as a parameter to the application settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{settings_8h_ab2cd0a47ab1ae964ee1ef1ab8cc99e73}{settings\+\_\+apply}} ()
+\begin{DoxyCompactList}\small\item\em Applies the changes to the application based on the current application settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -25,6 +27,16 @@ The files \mbox{\hyperlink{settings_8h}{settings.\+h}} and \mbox{\hyperlink{sett
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{settings_8h_ab2cd0a47ab1ae964ee1ef1ab8cc99e73}\label{settings_8h_ab2cd0a47ab1ae964ee1ef1ab8cc99e73}} 
+\index{settings.h@{settings.h}!settings\_apply@{settings\_apply}}
+\index{settings\_apply@{settings\_apply}!settings.h@{settings.h}}
+\doxysubsubsection{\texorpdfstring{settings\_apply()}{settings\_apply()}}
+{\footnotesize\ttfamily void settings\+\_\+apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Applies the changes to the application based on the current application settings. 
+
 \mbox{\Hypertarget{settings_8h_a2ff96754708baec1aaebf57c147ff9ff}\label{settings_8h_a2ff96754708baec1aaebf57c147ff9ff}} 
 \index{settings.h@{settings.h}!settings\_get@{settings\_get}}
 \index{settings\_get@{settings\_get}!settings.h@{settings.h}}

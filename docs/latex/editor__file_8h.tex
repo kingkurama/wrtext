@@ -1,5 +1,6 @@
 \hypertarget{editor__file_8h}{}\doxysection{src/editor\+\_\+file.h File Reference}
 \label{editor__file_8h}\index{src/editor\_file.h@{src/editor\_file.h}}
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
@@ -19,7 +20,11 @@ int \mbox{\hyperlink{editor__file_8h_adab65437d6b8a390622f183a82785f8a}{editor\+
 int \mbox{\hyperlink{editor__file_8h_a5766570aed4005d4a9ee36d67a70863c}{editor\+\_\+file\+\_\+update\+\_\+lines}} (\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$f)
 \begin{DoxyCompactList}\small\item\em Updates the lines field of the file by counting the number of new-\/lines in the content. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{editor__file_8h_ad1edafe3cc53101ae3583bae2f0bc3f5}{editor\+\_\+file\+\_\+update\+\_\+size}} (\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$f)
-\begin{DoxyCompactList}\small\item\em Updates the size field of the file by measuring the size of the content. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Updates the size field of the file by measuring the size of the content. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{editor__file_8h_aa3c0d48b38d5fab34ba9f833fa16e780}{editor\+\_\+file\+\_\+update\+\_\+name}} (\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Updates the name of the file based on the file path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{editor__file_8h_a430262de466b5574baecfcc4bed0febd}{editor\+\_\+file\+\_\+update\+\_\+content}} (\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Updates the full content of the file based on the gtk buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
@@ -47,6 +52,21 @@ Frees the memory of a editor file.
 {\em f} & File to be freed \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{editor__file_8h_a430262de466b5574baecfcc4bed0febd}\label{editor__file_8h_a430262de466b5574baecfcc4bed0febd}} 
+\index{editor\_file.h@{editor\_file.h}!editor\_file\_update\_content@{editor\_file\_update\_content}}
+\index{editor\_file\_update\_content@{editor\_file\_update\_content}!editor\_file.h@{editor\_file.h}}
+\doxysubsubsection{\texorpdfstring{editor\_file\_update\_content()}{editor\_file\_update\_content()}}
+{\footnotesize\ttfamily int editor\+\_\+file\+\_\+update\+\_\+content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Updates the full content of the file based on the gtk buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & File \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{editor__file_8h_a5766570aed4005d4a9ee36d67a70863c}\label{editor__file_8h_a5766570aed4005d4a9ee36d67a70863c}} 
 \index{editor\_file.h@{editor\_file.h}!editor\_file\_update\_lines@{editor\_file\_update\_lines}}
 \index{editor\_file\_update\_lines@{editor\_file\_update\_lines}!editor\_file.h@{editor\_file.h}}
@@ -56,6 +76,21 @@ Frees the memory of a editor file.
 
 
 Updates the lines field of the file by counting the number of new-\/lines in the content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & File \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{editor__file_8h_aa3c0d48b38d5fab34ba9f833fa16e780}\label{editor__file_8h_aa3c0d48b38d5fab34ba9f833fa16e780}} 
+\index{editor\_file.h@{editor\_file.h}!editor\_file\_update\_name@{editor\_file\_update\_name}}
+\index{editor\_file\_update\_name@{editor\_file\_update\_name}!editor\_file.h@{editor\_file.h}}
+\doxysubsubsection{\texorpdfstring{editor\_file\_update\_name()}{editor\_file\_update\_name()}}
+{\footnotesize\ttfamily int editor\+\_\+file\+\_\+update\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Updates the name of the file based on the file path. 
 
 
 \begin{DoxyParams}{Parameters}

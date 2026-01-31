@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['updating_5fcheckboxes_5fthrough_5fcode_0',['updating_checkboxes_through_code',['../gui__settings_8c.html#a93a755dcd6a2c8c5d480c66196f33928',1,'gui_settings.c']]]
+  ['response_0',['response',['../structfd__cbdata.html#a48fe64a2616b79765d5e45994a28c719',1,'fd_cbdata']]],
+  ['result_1',['result',['../structfd__cbdata.html#afd9428850581118f79131b347b86d2e3',1,'fd_cbdata']]]
 ];

@@ -1,12 +1,24 @@
 \hypertarget{main_8c}{}\doxysection{src/main.c File Reference}
 \label{main_8c}\index{src/main.c@{src/main.c}}
+{\ttfamily \#include \char`\"{}editor\+\_\+file.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}gui\+\_\+edit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gui\+\_\+edit\+\_\+menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$gtk/gtk.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
 \begin{DoxyCompactList}\small\item\em Main function of WRText. (Doxygen test) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ad872cc0b00620980b955e9bcb551f522}{cmd\+\_\+files}}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{main_8c_a1073f2530c45d00ba0f5d38433bbcd5f}{cmd\+\_\+paths}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -27,3 +39,18 @@ Main function of WRText. (Doxygen test)
 {\em argv} & List of arguments as strings \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_ad872cc0b00620980b955e9bcb551f522}\label{main_8c_ad872cc0b00620980b955e9bcb551f522}} 
+\index{main.c@{main.c}!cmd\_files@{cmd\_files}}
+\index{cmd\_files@{cmd\_files}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{cmd\_files}{cmd\_files}}
+{\footnotesize\ttfamily int cmd\+\_\+files}
+
+\mbox{\Hypertarget{main_8c_a1073f2530c45d00ba0f5d38433bbcd5f}\label{main_8c_a1073f2530c45d00ba0f5d38433bbcd5f}} 
+\index{main.c@{main.c}!cmd\_paths@{cmd\_paths}}
+\index{cmd\_paths@{cmd\_paths}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{cmd\_paths}{cmd\_paths}}
+{\footnotesize\ttfamily char$\ast$$\ast$ cmd\+\_\+paths}
+

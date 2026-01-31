@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['page_5fwidget_0',['page_widget',['../structeditor__file__list.html#a8c8ab60d16b3f954b44baed4bcce7799',1,'editor_file_list']]],
-  ['parent_5fwindow_1',['parent_window',['../gui__settings_8c.html#a4583c67a7e929ce8c51bd25c8818d50c',1,'gui_settings.c']]]
+  ['main_0',['main',['../main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
+  ['max_5fpath_5flength_2',['MAX_PATH_LENGTH',['../data__directory__system_8h.html#a9eb6992d76f02128388ae95c0415604a',1,'data_directory_system.h']]]
 ];

@@ -1,0 +1,54 @@
+\hypertarget{document__save__system_8h}{}\doxysection{src/document\+\_\+save\+\_\+system.h File Reference}
+\label{document__save__system_8h}\index{src/document\_save\_system.h@{src/document\_save\_system.h}}
+
+
+\mbox{\hyperlink{document__save__system_8h}{document\+\_\+save\+\_\+system.\+h}} and \mbox{\hyperlink{document__save__system_8c}{document\+\_\+save\+\_\+system.\+c}} handle operations involved with loading and saving the state of documents. Entries are written in a custom binary format.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDocument}{Document}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{document__save__system_8h_a806c0707dabfb7bd543860a164a435c0}{DOCUMENT\+\_\+\+STORAGE\+\_\+\+FILE\+\_\+\+NAME}}~\char`\"{}session\+Data.\+bin\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structDocument}{Document}} \mbox{\hyperlink{document__save__system_8h_a2e1db002c1668eb9239daee8e84b80ba}{get\+\_\+document}} (const char $\ast$filepath)
+\item 
+int \mbox{\hyperlink{document__save__system_8h_a826842da6c4e47d5a132e4b201004c6a}{save\+\_\+document}} (\mbox{\hyperlink{structDocument}{Document}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{document__save__system_8h}{document\+\_\+save\+\_\+system.\+h}} and \mbox{\hyperlink{document__save__system_8c}{document\+\_\+save\+\_\+system.\+c}} handle operations involved with loading and saving the state of documents. Entries are written in a custom binary format. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{document__save__system_8h_a806c0707dabfb7bd543860a164a435c0}\label{document__save__system_8h_a806c0707dabfb7bd543860a164a435c0}} 
+\index{document\_save\_system.h@{document\_save\_system.h}!DOCUMENT\_STORAGE\_FILE\_NAME@{DOCUMENT\_STORAGE\_FILE\_NAME}}
+\index{DOCUMENT\_STORAGE\_FILE\_NAME@{DOCUMENT\_STORAGE\_FILE\_NAME}!document\_save\_system.h@{document\_save\_system.h}}
+\doxysubsubsection{\texorpdfstring{DOCUMENT\_STORAGE\_FILE\_NAME}{DOCUMENT\_STORAGE\_FILE\_NAME}}
+{\footnotesize\ttfamily \#define DOCUMENT\+\_\+\+STORAGE\+\_\+\+FILE\+\_\+\+NAME~\char`\"{}session\+Data.\+bin\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{document__save__system_8h_a2e1db002c1668eb9239daee8e84b80ba}\label{document__save__system_8h_a2e1db002c1668eb9239daee8e84b80ba}} 
+\index{document\_save\_system.h@{document\_save\_system.h}!get\_document@{get\_document}}
+\index{get\_document@{get\_document}!document\_save\_system.h@{document\_save\_system.h}}
+\doxysubsubsection{\texorpdfstring{get\_document()}{get\_document()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structDocument}{Document}} get\+\_\+document (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filepath }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{document__save__system_8h_a826842da6c4e47d5a132e4b201004c6a}\label{document__save__system_8h_a826842da6c4e47d5a132e4b201004c6a}} 
+\index{document\_save\_system.h@{document\_save\_system.h}!save\_document@{save\_document}}
+\index{save\_document@{save\_document}!document\_save\_system.h@{document\_save\_system.h}}
+\doxysubsubsection{\texorpdfstring{save\_document()}{save\_document()}}
+{\footnotesize\ttfamily int save\+\_\+document (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDocument}{Document}}}]{document }\end{DoxyParamCaption})}
+

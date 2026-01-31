@@ -1,0 +1,67 @@
+\hypertarget{gui__confirm_8c}{}\doxysection{src/gui\+\_\+confirm.c File Reference}
+\label{gui__confirm_8c}\index{src/gui\_confirm.c@{src/gui\_confirm.c}}
+{\ttfamily \#include \char`\"{}editor\+\_\+file.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gui\+\_\+alert.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gui\+\_\+edit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}logger.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structconfirm__params}{confirm\+\_\+params}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gui__confirm_8c_aed3bf64b34246b32dec9f52a12b3d428}{gui\+\_\+confirm\+\_\+close}} (\mbox{\hyperlink{structconfirm__params}{confirm\+\_\+params}} $\ast$p)
+\item 
+void \mbox{\hyperlink{gui__confirm_8c_a4561c023bfd501e29f562ca1c060813f}{gui\+\_\+confirm\+\_\+init}} (Gtk\+Widget $\ast$\mbox{\hyperlink{gui__settings_8c_a4583c67a7e929ce8c51bd25c8818d50c}{parent\+\_\+window}})
+\item 
+void \mbox{\hyperlink{gui__confirm_8c_ab738712d94590253d68749a5a55120b6}{gui\+\_\+confirm\+\_\+show}} (\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\+\_\+file\+\_\+id}} ef)
+\begin{DoxyCompactList}\small\item\em This function shows a dialog to the user asking whether to close without changes or cancel the close operation. The function itself handles the closing, it can be used when closing a single file or the whole application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Gtk\+Widget $\ast$ \mbox{\hyperlink{gui__confirm_8c_af08d1e70258875abbd19709fc60c0082}{parent2}} = NULL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gui__confirm_8c_aed3bf64b34246b32dec9f52a12b3d428}\label{gui__confirm_8c_aed3bf64b34246b32dec9f52a12b3d428}} 
+\index{gui\_confirm.c@{gui\_confirm.c}!gui\_confirm\_close@{gui\_confirm\_close}}
+\index{gui\_confirm\_close@{gui\_confirm\_close}!gui\_confirm.c@{gui\_confirm.c}}
+\doxysubsubsection{\texorpdfstring{gui\_confirm\_close()}{gui\_confirm\_close()}}
+{\footnotesize\ttfamily void gui\+\_\+confirm\+\_\+close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconfirm__params}{confirm\+\_\+params}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gui__confirm_8c_a4561c023bfd501e29f562ca1c060813f}\label{gui__confirm_8c_a4561c023bfd501e29f562ca1c060813f}} 
+\index{gui\_confirm.c@{gui\_confirm.c}!gui\_confirm\_init@{gui\_confirm\_init}}
+\index{gui\_confirm\_init@{gui\_confirm\_init}!gui\_confirm.c@{gui\_confirm.c}}
+\doxysubsubsection{\texorpdfstring{gui\_confirm\_init()}{gui\_confirm\_init()}}
+{\footnotesize\ttfamily void gui\+\_\+confirm\+\_\+init (\begin{DoxyParamCaption}\item[{Gtk\+Widget $\ast$}]{parent\+\_\+window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gui__confirm_8c_ab738712d94590253d68749a5a55120b6}\label{gui__confirm_8c_ab738712d94590253d68749a5a55120b6}} 
+\index{gui\_confirm.c@{gui\_confirm.c}!gui\_confirm\_show@{gui\_confirm\_show}}
+\index{gui\_confirm\_show@{gui\_confirm\_show}!gui\_confirm.c@{gui\_confirm.c}}
+\doxysubsubsection{\texorpdfstring{gui\_confirm\_show()}{gui\_confirm\_show()}}
+{\footnotesize\ttfamily void gui\+\_\+confirm\+\_\+show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\+\_\+file\+\_\+id}}}]{ef }\end{DoxyParamCaption})}
+
+
+
+This function shows a dialog to the user asking whether to close without changes or cancel the close operation. The function itself handles the closing, it can be used when closing a single file or the whole application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ef} & The ID of the closed file. The application will close this file if the user accepts. If passed -\/1 it will close the whole application instead \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{gui__confirm_8c_af08d1e70258875abbd19709fc60c0082}\label{gui__confirm_8c_af08d1e70258875abbd19709fc60c0082}} 
+\index{gui\_confirm.c@{gui\_confirm.c}!parent2@{parent2}}
+\index{parent2@{parent2}!gui\_confirm.c@{gui\_confirm.c}}
+\doxysubsubsection{\texorpdfstring{parent2}{parent2}}
+{\footnotesize\ttfamily Gtk\+Widget$\ast$ parent2 = NULL}
+

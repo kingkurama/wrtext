@@ -10,8 +10,12 @@ The files \mbox{\hyperlink{gui__edit_8h}{gui\+\_\+edit.\+h}} and \mbox{\hyperlin
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-Gtk\+Widget $\ast$ \mbox{\hyperlink{gui__edit_8h_a4d0abf0528052793453826e63826a71c}{gui\+\_\+edit\+\_\+init}} (Gtk\+Application $\ast$app)
+Gtk\+Widget $\ast$ \mbox{\hyperlink{gui__edit_8h_a24cf3d556072c4a2c053643d78a33ae5}{gui\+\_\+edit\+\_\+init}} (Gtk\+Application $\ast$app, int cmd\+\_\+files\+\_\+num, char $\ast$$\ast$cmd\+\_\+files\+\_\+str)
 \begin{DoxyCompactList}\small\item\em Initializes the main application window responsible for allowing the user to edit the code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gui__edit_8h_a4f1e7668468b9fdaa7aa8c6d3afc76e2}{gui\+\_\+edit\+\_\+statusbar\+\_\+update}} (\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Updates statusbar text with the data from the file passed as a parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gui__edit_8h_aaf9f7637bc48efffda617973c9b40f0c}{gui\+\_\+edit\+\_\+update\+\_\+titles}} ()
+\begin{DoxyCompactList}\small\item\em This function interates through every open file and updates it\textquotesingle{}s title on the notebook based on whether there are unsaved changes. (Shows the asterisk in case) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\+\_\+file\+\_\+id}} \mbox{\hyperlink{gui__edit_8h_a9526d247352bb14be4f467ee4953c131}{gui\+\_\+edit\+\_\+add\+\_\+file}} (\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$f)
 \begin{DoxyCompactList}\small\item\em Adds a file to the list of opened file so that the user may edit it. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{gui__edit_8h_a9c456445bb8064bd5c0d142c34af1a3c}{gui\+\_\+edit\+\_\+close\+\_\+file}} (\mbox{\hyperlink{editor__file_8h_a9ed9dddb2d11bfa3cbcb15f0094d1431}{editor\+\_\+file\+\_\+id}} id)
@@ -21,6 +25,12 @@ void \mbox{\hyperlink{gui__edit_8h_a6071253091095e91b5b17493c3609325}{gui\+\_\+e
 void \mbox{\hyperlink{gui__edit_8h_afb73ec36119c6a8bfe616d8a70576063}{gui\+\_\+edit\+\_\+add\+\_\+random\+\_\+file}} (GSimple\+Action $\ast$action, GVariant $\ast$parameter, gpointer user\+\_\+data)
 \begin{DoxyCompactList}\small\item\em Just a debug function to add a file with random contets. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$ \mbox{\hyperlink{gui__edit_8h_afa9cddf5be0ab874d29da2b9dceafc0f}{gui\+\_\+edit\+\_\+get\+\_\+selected\+\_\+file}} ()
+\item 
+void \mbox{\hyperlink{gui__edit_8h_a07b043dfb70c05eb2ef20e03168e1469}{gui\+\_\+edit\+\_\+set\+\_\+wrap}} (int b)
+\item 
+void \mbox{\hyperlink{gui__edit_8h_a0d88b0c4d534bef4b7e81ae6174412a1}{gui\+\_\+edit\+\_\+set\+\_\+whitespace}} (int b)
+\item 
+void \mbox{\hyperlink{gui__edit_8h_abb1157fc9b216a3aebf84f02e54d6735}{gui\+\_\+edit\+\_\+set\+\_\+line\+\_\+numbers}} (int b)
 \end{DoxyCompactItemize}
 
 
@@ -85,11 +95,11 @@ Function that closes an opened file.
 \doxysubsubsection{\texorpdfstring{gui\_edit\_get\_selected\_file()}{gui\_edit\_get\_selected\_file()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$ gui\+\_\+edit\+\_\+get\+\_\+selected\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{gui__edit_8h_a4d0abf0528052793453826e63826a71c}\label{gui__edit_8h_a4d0abf0528052793453826e63826a71c}} 
+\mbox{\Hypertarget{gui__edit_8h_a24cf3d556072c4a2c053643d78a33ae5}\label{gui__edit_8h_a24cf3d556072c4a2c053643d78a33ae5}} 
 \index{gui\_edit.h@{gui\_edit.h}!gui\_edit\_init@{gui\_edit\_init}}
 \index{gui\_edit\_init@{gui\_edit\_init}!gui\_edit.h@{gui\_edit.h}}
 \doxysubsubsection{\texorpdfstring{gui\_edit\_init()}{gui\_edit\_init()}}
-{\footnotesize\ttfamily Gtk\+Widget $\ast$ gui\+\_\+edit\+\_\+init (\begin{DoxyParamCaption}\item[{Gtk\+Application $\ast$}]{app }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Gtk\+Widget $\ast$ gui\+\_\+edit\+\_\+init (\begin{DoxyParamCaption}\item[{Gtk\+Application $\ast$}]{app,  }\item[{int}]{cmd\+\_\+files\+\_\+num,  }\item[{char $\ast$$\ast$}]{cmd\+\_\+files\+\_\+str }\end{DoxyParamCaption})}
 
 
 
@@ -100,3 +110,46 @@ Initializes the main application window responsible for allowing the user to edi
 {\em app} & Pointer to the GTK application \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{gui__edit_8h_abb1157fc9b216a3aebf84f02e54d6735}\label{gui__edit_8h_abb1157fc9b216a3aebf84f02e54d6735}} 
+\index{gui\_edit.h@{gui\_edit.h}!gui\_edit\_set\_line\_numbers@{gui\_edit\_set\_line\_numbers}}
+\index{gui\_edit\_set\_line\_numbers@{gui\_edit\_set\_line\_numbers}!gui\_edit.h@{gui\_edit.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_set\_line\_numbers()}{gui\_edit\_set\_line\_numbers()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+set\+\_\+line\+\_\+numbers (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gui__edit_8h_a0d88b0c4d534bef4b7e81ae6174412a1}\label{gui__edit_8h_a0d88b0c4d534bef4b7e81ae6174412a1}} 
+\index{gui\_edit.h@{gui\_edit.h}!gui\_edit\_set\_whitespace@{gui\_edit\_set\_whitespace}}
+\index{gui\_edit\_set\_whitespace@{gui\_edit\_set\_whitespace}!gui\_edit.h@{gui\_edit.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_set\_whitespace()}{gui\_edit\_set\_whitespace()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+set\+\_\+whitespace (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gui__edit_8h_a07b043dfb70c05eb2ef20e03168e1469}\label{gui__edit_8h_a07b043dfb70c05eb2ef20e03168e1469}} 
+\index{gui\_edit.h@{gui\_edit.h}!gui\_edit\_set\_wrap@{gui\_edit\_set\_wrap}}
+\index{gui\_edit\_set\_wrap@{gui\_edit\_set\_wrap}!gui\_edit.h@{gui\_edit.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_set\_wrap()}{gui\_edit\_set\_wrap()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+set\+\_\+wrap (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{gui__edit_8h_a4f1e7668468b9fdaa7aa8c6d3afc76e2}\label{gui__edit_8h_a4f1e7668468b9fdaa7aa8c6d3afc76e2}} 
+\index{gui\_edit.h@{gui\_edit.h}!gui\_edit\_statusbar\_update@{gui\_edit\_statusbar\_update}}
+\index{gui\_edit\_statusbar\_update@{gui\_edit\_statusbar\_update}!gui\_edit.h@{gui\_edit.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_statusbar\_update()}{gui\_edit\_statusbar\_update()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+statusbar\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structeditor__file}{editor\+\_\+file}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Updates statusbar text with the data from the file passed as a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointer to file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gui__edit_8h_aaf9f7637bc48efffda617973c9b40f0c}\label{gui__edit_8h_aaf9f7637bc48efffda617973c9b40f0c}} 
+\index{gui\_edit.h@{gui\_edit.h}!gui\_edit\_update\_titles@{gui\_edit\_update\_titles}}
+\index{gui\_edit\_update\_titles@{gui\_edit\_update\_titles}!gui\_edit.h@{gui\_edit.h}}
+\doxysubsubsection{\texorpdfstring{gui\_edit\_update\_titles()}{gui\_edit\_update\_titles()}}
+{\footnotesize\ttfamily void gui\+\_\+edit\+\_\+update\+\_\+titles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function interates through every open file and updates it\textquotesingle{}s title on the notebook based on whether there are unsaved changes. (Shows the asterisk in case) 
+

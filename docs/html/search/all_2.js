@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['editor_5ffile_0',['editor_file',['../structeditor__file.html',1,'']]],
-  ['editor_5ffile_2ec_1',['editor_file.c',['../editor__file_8c.html',1,'']]],
-  ['editor_5ffile_2eh_2',['editor_file.h',['../editor__file_8h.html',1,'']]],
-  ['editor_5ffile_5fdelete_3',['editor_file_delete',['../editor__file_8c.html#adab65437d6b8a390622f183a82785f8a',1,'editor_file_delete(editor_file *f):&#160;editor_file.c'],['../editor__file_8h.html#adab65437d6b8a390622f183a82785f8a',1,'editor_file_delete(editor_file *f):&#160;editor_file.c']]],
-  ['editor_5ffile_5fid_4',['editor_file_id',['../editor__file_8h.html#a9ed9dddb2d11bfa3cbcb15f0094d1431',1,'editor_file.h']]],
-  ['editor_5ffile_5flist_5',['editor_file_list',['../structeditor__file__list.html',1,'']]],
-  ['editor_5ffile_5fupdate_5flines_6',['editor_file_update_lines',['../editor__file_8c.html#a5766570aed4005d4a9ee36d67a70863c',1,'editor_file_update_lines(editor_file *f):&#160;editor_file.c'],['../editor__file_8h.html#a5766570aed4005d4a9ee36d67a70863c',1,'editor_file_update_lines(editor_file *f):&#160;editor_file.c']]],
-  ['editor_5ffile_5fupdate_5fsize_7',['editor_file_update_size',['../editor__file_8c.html#ad1edafe3cc53101ae3583bae2f0bc3f5',1,'editor_file_update_size(editor_file *f):&#160;editor_file.c'],['../editor__file_8h.html#ad1edafe3cc53101ae3583bae2f0bc3f5',1,'editor_file_update_size(editor_file *f):&#160;editor_file.c']]]
+  ['cmd_5ffiles_0',['cmd_files',['../main_8c.html#ad872cc0b00620980b955e9bcb551f522',1,'main.c']]],
+  ['cmd_5fpaths_1',['cmd_paths',['../main_8c.html#a1073f2530c45d00ba0f5d38433bbcd5f',1,'main.c']]],
+  ['confirm_5fparams_2',['confirm_params',['../structconfirm__params.html',1,'']]],
+  ['confirm_5fwindow_3',['confirm_window',['../structconfirm__params.html#a7597bf8356a7609c181ea4636b519e66',1,'confirm_params']]],
+  ['contents_4',['contents',['../structeditor__file.html#abaae71d14ef23b4673bd83146601fb87',1,'editor_file']]],
+  ['cursor_5fposition_5',['cursor_position',['../structeditor__file.html#a693479cbdaf8db080b7fac34e5b5721d',1,'editor_file']]],
+  ['cursorposition_6',['cursorPosition',['../structDocument.html#a4c8a3da9cb745ea01094a94cbcdc74ac',1,'Document']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">WRText<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">WRText<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,8 @@ $(function() {
   <div class="headertitle"><div class="title">editor_file.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
 </div>
 <p><a href="editor__file_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -99,6 +100,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad1edafe3cc53101ae3583bae2f0bc3f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editor__file_8h.html#ad1edafe3cc53101ae3583bae2f0bc3f5">editor_file_update_size</a> (<a class="el" href="structeditor__file.html">editor_file</a> *f)</td></tr>
 <tr class="memdesc:ad1edafe3cc53101ae3583bae2f0bc3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the size field of the file by measuring the size of the content.  <a href="editor__file_8h.html#ad1edafe3cc53101ae3583bae2f0bc3f5">More...</a><br /></td></tr>
 <tr class="separator:ad1edafe3cc53101ae3583bae2f0bc3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c0d48b38d5fab34ba9f833fa16e780"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editor__file_8h.html#aa3c0d48b38d5fab34ba9f833fa16e780">editor_file_update_name</a> (<a class="el" href="structeditor__file.html">editor_file</a> *f)</td></tr>
+<tr class="memdesc:aa3c0d48b38d5fab34ba9f833fa16e780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the name of the file based on the file path.  <a href="editor__file_8h.html#aa3c0d48b38d5fab34ba9f833fa16e780">More...</a><br /></td></tr>
+<tr class="separator:aa3c0d48b38d5fab34ba9f833fa16e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430262de466b5574baecfcc4bed0febd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editor__file_8h.html#a430262de466b5574baecfcc4bed0febd">editor_file_update_content</a> (<a class="el" href="structeditor__file.html">editor_file</a> *f)</td></tr>
+<tr class="memdesc:a430262de466b5574baecfcc4bed0febd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the full content of the file based on the gtk buffer.  <a href="editor__file_8h.html#a430262de466b5574baecfcc4bed0febd">More...</a><br /></td></tr>
+<tr class="separator:a430262de466b5574baecfcc4bed0febd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a9ed9dddb2d11bfa3cbcb15f0094d1431" name="a9ed9dddb2d11bfa3cbcb15f0094d1431"></a>
@@ -142,6 +149,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a430262de466b5574baecfcc4bed0febd" name="a430262de466b5574baecfcc4bed0febd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430262de466b5574baecfcc4bed0febd">&#9670;&nbsp;</a></span>editor_file_update_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int editor_file_update_content </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structeditor__file.html">editor_file</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the full content of the file based on the gtk buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>File </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5766570aed4005d4a9ee36d67a70863c" name="a5766570aed4005d4a9ee36d67a70863c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5766570aed4005d4a9ee36d67a70863c">&#9670;&nbsp;</a></span>editor_file_update_lines()</h2>
 
@@ -159,6 +192,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates the lines field of the file by counting the number of new-lines in the content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>File </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3c0d48b38d5fab34ba9f833fa16e780" name="aa3c0d48b38d5fab34ba9f833fa16e780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c0d48b38d5fab34ba9f833fa16e780">&#9670;&nbsp;</a></span>editor_file_update_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int editor_file_update_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structeditor__file.html">editor_file</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the name of the file based on the file path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>File </td></tr>

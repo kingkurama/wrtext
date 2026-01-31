@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">WRText<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">WRText<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -77,14 +77,58 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4566ec2f371c57f3997e76f8a30d4f80"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__dialog_8h.html#a4566ec2f371c57f3997e76f8a30d4f80">file_dialog_open_file</a> (GtkWindow *parent)</td></tr>
+<tr class="memitem:a4566ec2f371c57f3997e76f8a30d4f80"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__dialog_8h.html#a4566ec2f371c57f3997e76f8a30d4f80">file_dialog_open_file</a> (GtkWindow *<a class="el" href="gui__alert_8c.html#afd7deab3b9e8131e8f8d175b3f880eff">parent</a>)</td></tr>
 <tr class="memdesc:a4566ec2f371c57f3997e76f8a30d4f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a GTK file dialog to open a file.  <a href="file__dialog_8h.html#a4566ec2f371c57f3997e76f8a30d4f80">More...</a><br /></td></tr>
 <tr class="separator:a4566ec2f371c57f3997e76f8a30d4f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f5d723578d4e7dc5fc64c99e4500178"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__dialog_8h.html#a1f5d723578d4e7dc5fc64c99e4500178">file_dialog_save_file</a> (GtkWindow *parent, const char *suggested_name)</td></tr>
+<tr class="memitem:a1f5d723578d4e7dc5fc64c99e4500178"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__dialog_8h.html#a1f5d723578d4e7dc5fc64c99e4500178">file_dialog_save_file</a> (GtkWindow *<a class="el" href="gui__alert_8c.html#afd7deab3b9e8131e8f8d175b3f880eff">parent</a>, const char *suggested_name)</td></tr>
 <tr class="memdesc:a1f5d723578d4e7dc5fc64c99e4500178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a GTK file chooser dialog to save a file.  <a href="file__dialog_8h.html#a1f5d723578d4e7dc5fc64c99e4500178">More...</a><br /></td></tr>
 <tr class="separator:a1f5d723578d4e7dc5fc64c99e4500178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb1efd06203c5292e84d5844b928746"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__dialog_8h.html#afcb1efd06203c5292e84d5844b928746">file_dialog_create_file</a> (GtkWindow *<a class="el" href="gui__alert_8c.html#afd7deab3b9e8131e8f8d175b3f880eff">parent</a>, const char *suggested_name)</td></tr>
+<tr class="memdesc:afcb1efd06203c5292e84d5844b928746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a GTK file chooser dialog to create a new file.  <a href="file__dialog_8h.html#afcb1efd06203c5292e84d5844b928746">More...</a><br /></td></tr>
+<tr class="separator:afcb1efd06203c5292e84d5844b928746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="afcb1efd06203c5292e84d5844b928746" name="afcb1efd06203c5292e84d5844b928746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb1efd06203c5292e84d5844b928746">&#9670;&nbsp;</a></span>file_dialog_create_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * file_dialog_create_file </td>
+          <td>(</td>
+          <td class="paramtype">GtkWindow *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>suggested_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show a GTK file chooser dialog to create a new file. </p>
+<p >Presents a modal "Create File" dialog that lets the user pick a directory and type a filename. Overwrite confirmation is enabled to avoid accidental replacement. If the user accepts, the returned string is a newly allocated copy (use g_free() to free it). Returns NULL if the dialog was cancelled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent window for the dialog. </td></tr>
+    <tr><td class="paramname">suggested_name</td><td>Suggested filename to pre-fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* Newly allocated path string or NULL.</dd></dl>
+<p>Show a GTK file chooser dialog to create a new file.</p>
+<p >The returned string must be freed with g_free() by the caller. </p>
+
+</div>
+</div>
 <a id="a4566ec2f371c57f3997e76f8a30d4f80" name="a4566ec2f371c57f3997e76f8a30d4f80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4566ec2f371c57f3997e76f8a30d4f80">&#9670;&nbsp;</a></span>file_dialog_open_file()</h2>
 
