@@ -2,6 +2,12 @@
 #include "logger.h"
 #include <string.h>
 
+#ifdef _WIN32
+#define PATH_DIVIDER '\\'
+#else
+#define PATH_DIVIDER '/'
+#endif
+
 int
 editor_file_delete(editor_file *f)
 {
@@ -57,7 +63,7 @@ editor_file_update_name(editor_file *f)
 	while(*c != '\0') {
 		c++;
 		nl++;
-		if(*c == '/') {
+		if(*c == PATH_DIVIDER) {
 			ls = c + 1;
 			nl = 0;
 		}
