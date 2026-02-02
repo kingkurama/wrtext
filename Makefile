@@ -3,7 +3,7 @@ CFLAGS = `pkg-config --cflags gtk4 gtksourceview-5`
 LIBS = `pkg-config --libs gtk4 gtksourceview-5`
 
 SRC = ./src
-VER = 1.0.0
+VER = 1.0.1
 EXE = WRText-v$(VER)
 
 all: # Compiles the release version of the application
