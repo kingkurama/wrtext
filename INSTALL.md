@@ -27,8 +27,43 @@ To run the application:
 `./WRText-x` (replace `x` with the version of the application, like `v1.0`)
 
 ## Instructions for Windows
+The following are the instructions to compile WRText on Windows using MSYS2 with MinGW64.
+Compiling with other environments (Visual Studio, Cygwin, plain CMD/PowerShell) is not supported and will cause dependency issues.
 
-Just use MSYS2 and compile GTK-4.8.3 yourself and use it to compile the application. (Probably need to compile `gtksourceview5` too).
+The application targets GTK 4.8.x
+### Requisites
+Install MSYS2
+
+Launch MINGW64 and run the following command to update the system
+`pacman -Syu`
+
+Install the required packages
+`pacman -S \
+  mingw-w64-x86_64-gcc \
+  mingw-w64-x86_64-make \
+  mingw-w64-x86_64-pkg-config \
+  mingw-w64-x86_64-gtk4 \
+  mingw-w64-x86_64-gtksourceview5`
+
+### Compiling
+Go to the WRText GitHub repository (https://github.com/gabsimoni/wrtext) and download the repository to a directory of your choice
+
+Navigate to the extracted directory:
+`cd wrtext`
+
+Compile the source code:
+`make`
+or
+`mingw32-make`
+This will generate a windows executable in the project root.
+
+### Executing
+To run the application:
+`./WRText-x` (replace `x` with the version of the application, like `v1.0`)
+
+### Notes
+When executing outside of a MSYS2 terminal, many *.dll files must be bundled to the same directory as the executable.
+A package of the latest release is provided with all the *.dll files bundled and can be downloaded and used as it.
 
 ## Instructions for MacOS
 
